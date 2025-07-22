@@ -35,7 +35,6 @@ flutter pub get
 
 ---
 
-
 ## 🔘 1. Basic Usage
 
 ```dart
@@ -51,7 +50,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Basic Usage](assets/screenshots/basic_usage.png)
+![Basic Usage](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/basic_usage.png)
 
 ---
 
@@ -100,7 +99,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Header & Footer](assets/screenshots/header_footer.png)
+![Header & Footer]((https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/header_footer.png))
 
 ---
 
@@ -125,7 +124,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Custom Styles](assets/screenshots/custom_styles.png)
+![Custom Styles]((https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/custom_styles.png))
 
 ---
 
@@ -148,7 +147,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Fixed Size Menu](assets/screenshots/fixed_size.png)
+![Fixed Size Menu](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/fixed_size.png)
 
 ---
 
@@ -179,7 +178,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Dividers and Custom](assets/screenshots/dividers_and_custom.png)
+![Dividers and Custom](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/dividers_and_custom.png)
 
 ---
 
@@ -200,7 +199,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Custom Icon and Size](assets/screenshots/color_size.png)
+![Custom Icon and Size](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/color_size.png)
 
 ---
 
@@ -233,7 +232,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Header/Footer Styles](assets/screenshots/header_footer_styles.png)
+![Header/Footer Styles](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/header_footer_styles.png)
 
 ---
 
@@ -253,7 +252,7 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Custom Tooltip](assets/screenshots/custom_tooltip_colors.png)
+![Custom Tooltip](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/custom_tooltip_colors.png)
 
 ---
 
@@ -278,9 +277,10 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Label and Icon Colors for Items](assets/screenshots/label_icon_colors.png)
+![Label and Icon Colors for Items](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/label_icon_colors.png)
 
 ---
+
 ## 🔘 11. Root Text Instead of Icon
 
 ```dart
@@ -304,6 +304,7 @@ MenuDropdownButton(
 ![Root Text](assets/screenshots/root_text.png)
 
 ---
+
 ## 🔘 12. Root Icon + Text Combination
 
 ```dart
@@ -324,9 +325,10 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Root Icon + Text Combination](assets/screenshots/text_icon.png)
+![Root Icon + Text Combination](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/text_icon.png)
 
 ---
+
 ## 🔘 13. Invisible Trigger (Secret Function Example)
 
 ```dart
@@ -341,8 +343,8 @@ MenuDropdownButton(
 
 📸 Screenshots:
 
-![Invisible Trigger1](assets/screenshots/invisible_trigger1.png)
-![Invisible Trigger](assets/screenshots/invisible_trigger.png)
+![Invisible Trigger1](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/invisible_trigger1.png)
+![Invisible Trigger](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/invisible_trigger.png)
 
 ---
 
@@ -356,7 +358,7 @@ The `flex_menu_button` widget supports both **automatic content-based sizing** a
 
 |               Icon Only (Auto)                |            Icon Only (Fixed Width)             |                 Icon + Text (Auto)                 |
 | :-------------------------------------------: | :--------------------------------------------: | :------------------------------------------------: |
-| ![icon_auto](assets/screenshots/example1.png) | ![icon_fixed](assets/screenshots/example2.png) | ![icon_text_auto](assets/screenshots/example3.png) |
+| ![icon_auto](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example1.png) | ![icon_fixed](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example2.png) | ![icon_text_auto](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example3.png) |
 
 ---
 
@@ -376,7 +378,7 @@ MenuDropdownButton(
 ```
 
 📸 Screenshot:
-![Icons Only (Auto-Sized)](assets/screenshots/example1.png)
+![Icons Only (Auto-Sized)](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example1.png)
 ---
 
 ### ✅ Example 2 – Icons Only (Fixed Width)
@@ -397,7 +399,7 @@ MenuDropdownButton(
 ```
 
 📸 Screenshot:
-![Icons Only (Fixed Width)](assets/screenshots/example2.png)
+![Icons Only (Fixed Width)](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example2.png)
 ---
 
 ### ✅ Example 3 – Icons + Text (Auto-Sized)
@@ -416,7 +418,7 @@ MenuDropdownButton(
 ```
 
 📸 Screenshot:
-![Icons + Text](assets/screenshots/example3.png)
+![Icons + Text](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/example3.png)
 ---
 
 📝 **Note:**  
@@ -429,16 +431,13 @@ If you don't specify a width in `MenuDropdownConfig`, the dropdown will scale ba
 ### 🔗 Connect with Me
 
 - 🐦 [X/Twitter](https://x.com/kutlwano_drew)
-    
+
 - 💻 [GitHub](https://github.com/kutlwano-drew)
-    
 
 ---
 
 ### ☕ Buy Me a Coffee
 
 - [☕ Support Here](https://buymeacoffee.com/kutlwano_drew)
-    
-
+  
 ---
-
