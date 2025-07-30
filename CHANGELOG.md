@@ -1,3 +1,7 @@
+## 1.0.0
+
+- Refined documentation and examples
+
 ## 0.0.9
 
 - Refined documentation and examples
