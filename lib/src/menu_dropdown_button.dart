@@ -3,37 +3,16 @@ import 'menu_config.dart';
 import 'menu_item.dart';
 
 class MenuDropdownButton extends StatefulWidget {
-  /// Optional custom icon widget for the root button (e.g. Icon, HeroIcon, SvgPicture)
   final Widget? icon;
-
-  /// Optional text for the root button
   final String? label;
-
-  /// Optional style for the root text
   final TextStyle? labelTextStyle;
-
-  /// Tooltip shown on hover
   final String tooltip;
-
-  /// Menu items
   final List<MenuItem> items;
-
-  /// Configuration
   final MenuDropdownConfig config;
-
-  /// Optional header widget
   final Widget? header;
-
-  /// Optional footer widget
   final Widget? footer;
-
-  /// Optional tooltip text color
   final Color? tooltipTextColor;
-
-  /// Optional tooltip background color
   final Color? tooltipBackgroundColor;
-
-  /// Optional background color of the root button
   final Color? buttonColor;
 
   const MenuDropdownButton({
@@ -132,12 +111,14 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           if (item.icon != null)
-                            Icon(
-                              item.icon,
-                              color: item.iconColor ??
-                                  widget.config.itemIconColor ??
-                                  Theme.of(context).iconTheme.color,
-                              size: widget.config.iconSize,
+                            IconTheme(
+                              data: IconThemeData(
+                                size: widget.config.iconSize,
+                                color: widget.config.itemIconColor ??
+                                    Theme.of(context).iconTheme.color ??
+                                    Colors.black,
+                              ),
+                              child: item.icon!,
                             ),
                           if ((item.label ?? '').isNotEmpty) ...[
                             const SizedBox(width: 10),
@@ -237,7 +218,6 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
 
     if (widget.icon == null &&
         (widget.label == null || widget.label!.isEmpty)) {
-      // Secret function — no icon or label
       triggerChild = const SizedBox(width: 20, height: 20);
     } else {
       triggerChild = Row(

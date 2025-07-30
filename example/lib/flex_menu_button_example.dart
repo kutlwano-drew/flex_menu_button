@@ -39,12 +39,12 @@ class MenuDemoPage extends StatelessWidget {
             ),
             items: [
               MenuItem(
-                icon: Icons.edit,
+                icon: Icon(Icons.edit),
                 label: 'Edit',
                 onTap: () => _showSnack(context, 'Edit tapped'),
               ),
               MenuItem(
-                icon: Icons.delete,
+                icon: Icon(Icons.delete),
                 label: 'Delete',
                 onTap: () => _showSnack(context, 'Delete tapped'),
               ),

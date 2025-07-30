@@ -31,7 +31,7 @@ void main() {
               icon: Icon(Icons.menu),
               tooltip: 'Tap Menu',
               items: [
-                MenuItem(icon: Icons.settings, label: 'Settings'),
+                MenuItem(icon: Icon(Icons.settings), label: 'Settings'),
               ],
             ),
           ),
@@ -79,7 +79,7 @@ void main() {
               header: Text('Header Title'),
               footer: Text('Footer Note'),
               items: [
-                MenuItem(icon: Icons.edit, label: 'Edit'),
+                MenuItem(icon: Icon(Icons.settings), label: 'Settings'),
               ],
             ),
           ),
@@ -110,7 +110,7 @@ void main() {
               tooltip: 'Test Menu',
               config: config,
               items: [
-                MenuItem(icon: Icons.star, label: 'Favorite'),
+                MenuItem(icon: Icon(Icons.settings), label: 'Settings'),
               ],
             ),
           ),

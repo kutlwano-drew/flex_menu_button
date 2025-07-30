@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MenuItem {
-  final IconData? icon;
+  final Widget? icon; // Changed from IconData to Widget
   final String? label;
   final VoidCallback? onTap;
   final bool isDivider;
@@ -10,7 +10,6 @@ class MenuItem {
 
   // Per-item style overrides
   final TextStyle? labelStyle;
-  final Color? iconColor;
 
   const MenuItem({
     this.icon,
@@ -20,6 +19,5 @@ class MenuItem {
     this.customWidget,
     this.trailing,
     this.labelStyle,
-    this.iconColor,
   });
 }

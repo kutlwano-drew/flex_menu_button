@@ -1,3 +1,12 @@
+## 1.0.2
+
+- Modify Items to allow custom icon widgets
+- Refined documentation and examples
+
+## 1.0.1
+
+- Refined documentation and examples
+
 ## 1.0.0
 
 - Refined documentation and examples

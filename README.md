@@ -42,8 +42,8 @@ MenuDropdownButton(
   tooltip: 'Options',
   icon: Icon(Icons.more_vert),
   items: [
-    MenuItem(icon: Icons.edit, label: 'Edit', onTap: () {}),
-    MenuItem(icon: Icons.delete, label: 'Delete', onTap: () {}),
+    MenuItem(icon: Icon(Icons.edit), label: 'Edit', onTap: () {}),
+    MenuItem(icon: Icon(Icons.delete), label: 'Delete', onTap: () {}),
   ],
 )
 ````
@@ -64,8 +64,8 @@ MenuDropdownButton(
     alignment: MenuAlignment.center,
   ),
   items: [
-    MenuItem(icon: Icons.share, label: 'Share', onTap: () {}),
-    MenuItem(icon: Icons.link, label: 'Copy Link', onTap: () {}),
+    MenuItem(icon: Icon(Icons.share), label: 'Share', onTap: () {}),
+    MenuItem(icon: Icon(Icons.link), label: 'Copy Link', onTap: () {}),
   ],
 )
 ```
@@ -91,8 +91,8 @@ MenuDropdownButton(
     child: Text('Footer: Version 1.0.0', style: TextStyle(color: Colors.grey)),
   ),
   items: [
-    MenuItem(icon: Icons.account_circle, label: 'Profile'),
-    MenuItem(icon: Icons.logout, label: 'Logout'),
+    MenuItem(icon: Icon(Icons.account_circle), label: 'Profile'),
+    MenuItem(icon: Icon(Icons.logout), label: 'Logout'),
   ],
 )
 ```
@@ -116,8 +116,8 @@ MenuDropdownButton(
     tooltipTextColor: Colors.white,
   ),
   items: [
-    MenuItem(icon: Icons.visibility, label: 'Preview'),
-    MenuItem(icon: Icons.save, label: 'Save Draft'),
+    MenuItem(icon: Icon(Icons.visibility), label: 'Preview'),
+    MenuItem(icon: Icon(Icons.save), label: 'Save Draft'),
   ],
 )
 ```
@@ -140,7 +140,7 @@ MenuDropdownButton(
   ),
   items: List.generate(
     10,
-    (i) => MenuItem(icon: Icons.star, label: 'Item ${i + 1}'),
+    (i) => MenuItem(icon: Icon(Icons.star), label: 'Item ${i + 1}'),
   ),
 )
 ```
@@ -191,8 +191,8 @@ MenuDropdownButton(
   iconColor: Colors.red,
   iconSize: 30,
   items: [
-    MenuItem(icon: Icons.settings, label: 'Settings'),
-    MenuItem(icon: Icons.logout, label: 'Logout'),
+    MenuItem(icon: Icon(Icons.settings), label: 'Settings'),
+    MenuItem(icon: Icon(Icons.logout), label: 'Logout'),
   ],
 )
 ```
@@ -224,8 +224,8 @@ MenuDropdownButton(
     ),
   ),
   items: [
-    MenuItem(icon: Icons.home, label: 'Home'),
-    MenuItem(icon: Icons.person, label: 'Profile'),
+    MenuItem(icon: Icon(Icons.home), label: 'Home'),
+    MenuItem(icon: Icon(Icons.person), label: 'Profile'),
   ],
 )
 ```
@@ -245,7 +245,7 @@ MenuDropdownButton(
   tooltipTextColor: Colors.black,
   tooltipBackgroundColor: Colors.yellow,
   items: [
-    MenuItem(icon: Icons.help, label: 'Help'),
+    MenuItem(icon: Icon(Icons.help), label: 'Help'),
   ],
 )
 ```
@@ -263,8 +263,8 @@ MenuDropdownButton(
   icon: Icon(Icons.more_horiz),
   tooltip: "Options",
   items: [
-    MenuItem(icon: Icons.edit, label: 'Edit'),
-    MenuItem(icon: Icons.delete, label: 'Delete'),
+    MenuItem(icon: Icon(Icons.edit), label: 'Edit'),
+    MenuItem(icon: Icon(Icons.delete), label: 'Delete'),
   ],
   config: MenuDropdownConfig(
     backgroundColor: Colors.grey[850]!,
@@ -293,8 +293,8 @@ MenuDropdownButton(
     color: Colors.blue,
   ),
   items: [
-    MenuItem(icon: Icons.settings, label: 'Settings'),
-    MenuItem(icon: Icons.logout, label: 'Logout'),
+    MenuItem(icon: Icon(Icons.settings), label: 'Settings'),
+    MenuItem(icon: Icon(Icons.logout), label: 'Logout'),
   ],
 )
 ```
@@ -317,8 +317,8 @@ MenuDropdownButton(
     color: Colors.deepPurple,
   ),
   items: [
-    MenuItem(icon: Icons.dashboard, label: 'Overview'),
-    MenuItem(icon: Icons.analytics, label: 'Reports'),
+    MenuItem(icon: Icon(Icons.dashboard), label: 'Overview'),
+    MenuItem(icon: Icon(Icons.analytics), label: 'Reports'),
   ],
 )
 ```
@@ -340,8 +340,8 @@ MenuDropdownButton(
                 color: Colors.white,
               ),
               items: [
-                MenuItem(icon: Icons.edit, label: 'Edit', onTap: () {}),
-                MenuItem(icon: Icons.delete, label: 'Delete', onTap: () {}),
+                MenuItem(icon: Icon(Icons.edit), label: 'Edit', onTap: () {}),
+                MenuItem(icon: Icon(Icons.delete), label: 'Delete', onTap: () {}),
               ],
             )
 ```
@@ -358,8 +358,8 @@ MenuDropdownButton(
 MenuDropdownButton(
   tooltip: 'Hidden Dev Options',
   items: [
-    MenuItem(icon: Icons.bug_report, label: 'Debug Mode'),
-    MenuItem(icon: Icons.lock, label: 'Security Console'),
+    MenuItem(icon: Icon(Icons.bug_report), label: 'Debug Mode'),
+    MenuItem(icon: Icon(Icons.lock), label: 'Security Console'),
   ],
 )
 ```
@@ -393,9 +393,9 @@ MenuDropdownButton(
   tooltip: 'Options',
   config: MenuDropdownConfig(),
   items: [
-    MenuItem(icon: Icons.copy, label: ''),
-    MenuItem(icon: Icons.share, label: ''),
-    MenuItem(icon: Icons.delete, label: ''),
+    MenuItem(icon: Icon(Icons.copy), label: ''),
+    MenuItem(icon: Icon(Icons.share), label: ''),
+    MenuItem(icon: Icon(Icons.delete), label: ''),
   ],
 )
 ```
@@ -414,9 +414,9 @@ MenuDropdownButton(
     width: 180,
   ),
   items: [
-    MenuItem(icon: Icons.copy, label: ''),
-    MenuItem(icon: Icons.share, label: ''),
-    MenuItem(icon: Icons.delete, label: ''),
+    MenuItem(icon: Icon(Icons.copy), label: ''),
+    MenuItem(icon: Icon(Icons.share), label: ''),
+    MenuItem(icon: Icon(Icons.delete), label: ''),
   ],
 )
 ```
@@ -433,9 +433,9 @@ MenuDropdownButton(
   tooltip: 'Options',
   config: MenuDropdownConfig(),
   items: [
-    MenuItem(icon: Icons.copy, label: 'Copy'),
-    MenuItem(icon: Icons.share, label: 'Share'),
-    MenuItem(icon: Icons.delete, label: 'Delete'),
+    MenuItem(icon: Icon(Icons.copy), label: 'Copy'),
+    MenuItem(icon: Icon(Icons.share), label: 'Share'),
+    MenuItem(icon: Icon(Icons.delete), label: 'Delete'),
   ],
 )
 ```

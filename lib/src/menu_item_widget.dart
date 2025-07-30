@@ -35,8 +35,13 @@ class MenuItemWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if (item.icon != null)
-              Icon(item.icon,
-                  size: config.iconSize, color: item.iconColor ?? Colors.white),
+              IconTheme(
+                data: IconThemeData(
+                  size: config.iconSize,
+                  color: Colors.black, // default color
+                ),
+                child: item.icon!,
+              ),
             if (item.icon != null) const SizedBox(width: 10),
             if (item.label != null)
               Expanded(
