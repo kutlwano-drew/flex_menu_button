@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flex_menu_button/flex_menu_button.dart';
+import '../../lib/flex_menu_button.dart';
 
 void main() {
   runApp(const MenuExampleApp());

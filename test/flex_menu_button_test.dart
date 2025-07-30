@@ -10,7 +10,7 @@ void main() {
         const MaterialApp(
           home: Scaffold(
             body: MenuDropdownButton(
-              icon: Icons.menu,
+              icon: Icon(Icons.menu),
               tooltip: 'Menu Options',
               items: [],
             ),
@@ -28,7 +28,7 @@ void main() {
         const MaterialApp(
           home: Scaffold(
             body: MenuDropdownButton(
-              icon: Icons.menu,
+              icon: Icon(Icons.menu),
               tooltip: 'Tap Menu',
               items: [
                 MenuItem(icon: Icons.settings, label: 'Settings'),
@@ -52,10 +52,12 @@ void main() {
         const MaterialApp(
           home: Scaffold(
             body: MenuDropdownButton(
-              icon: Icons.settings,
+              icon: Icon(
+                Icons.settings,
+                color: Colors.white,
+                size: 40,
+              ),
               tooltip: 'Settings',
-              iconColor: Colors.red,
-              iconSize: 40,
               items: [],
             ),
           ),
@@ -72,7 +74,7 @@ void main() {
         const MaterialApp(
           home: Scaffold(
             body: MenuDropdownButton(
-              icon: Icons.more_vert,
+              icon: Icon(Icons.more_vert),
               tooltip: 'Options',
               header: Text('Header Title'),
               footer: Text('Footer Note'),
@@ -104,7 +106,7 @@ void main() {
         const MaterialApp(
           home: Scaffold(
             body: MenuDropdownButton(
-              icon: Icons.menu,
+              icon: Icon(Icons.menu),
               tooltip: 'Test Menu',
               config: config,
               items: [

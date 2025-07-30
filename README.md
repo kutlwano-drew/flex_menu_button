@@ -1,5 +1,5 @@
 
-# 🔽 flex_menu_button
+# flex_menu_button
 
 A customizable and lightweight Flutter dropdown menu button designed to be used in `AppBar`s, `Toolbars`, or anywhere you want quick access to menu actions. It supports icons, text, headers, footers, dividers, custom widgets, flexible alignment, and full style control.
 
@@ -7,14 +7,14 @@ A customizable and lightweight Flutter dropdown menu button designed to be used 
 
 ## Features
 
-🔘 Works out of the box — no dependencies  
-🔘Custom icon, label, text styles  
-🔘Optional header and footer widgets  
-🔘Dropdown alignment and screen-side flipping  
-🔘Custom width, max height, padding, and scrolling  
-🔘Optional custom widgets, dividers, and trailing elements  
-🔘Tooltip customization  
-🔘Fully modular, easy to extend
+• Works out of the box — no dependencies  
+•Custom icon, label, text styles  
+•Optional header and footer widgets  
+•Dropdown alignment and screen-side flipping  
+•Custom width, max height, padding, and scrolling  
+•Optional custom widgets, dividers, and trailing elements  
+•Tooltip customization  
+•Fully modular, easy to extend
 
 ---
 
@@ -35,12 +35,12 @@ flutter pub get
 
 ---
 
-## 🔘 1. Basic Usage
+## • 1. Basic Usage
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Options',
-  icon: Icons.more_vert,
+  icon: Icon(Icons.more_vert),
   items: [
     MenuItem(icon: Icons.edit, label: 'Edit', onTap: () {}),
     MenuItem(icon: Icons.delete, label: 'Delete', onTap: () {}),
@@ -54,12 +54,12 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 2. Menu Alignment Options
+## • 2. Menu Alignment Options
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Align Center',
-  icon: Icons.more_horiz,
+  icon: Icon(Icons.more_horiz),
   config: MenuDropdownConfig(
     alignment: MenuAlignment.center,
   ),
@@ -76,12 +76,12 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 3. Header & Footer
+## • 3. Header & Footer
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Menu with Header/Footer',
-  icon: Icons.menu,
+  icon: Icon(Icons.menu),
   header: Padding(
     padding: EdgeInsets.all(8),
     child: Text('Header: Account Actions', style: TextStyle(color: Colors.white)),
@@ -99,16 +99,16 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Header & Footer]((https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/header_footer.png))
+![Header & Footer](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/header_footer.png)
 
 ---
 
-## 🔘 4. Custom Colors and Text Styles
+## • 4. Custom Colors and Text Styles
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Styled Menu',
-  icon: Icons.palette,
+  icon: Icon(Icons.palette),
   config: MenuDropdownConfig(
     backgroundColor: Colors.blue,
     labelTextStyle: TextStyle(color: Colors.yellowAccent),
@@ -124,16 +124,16 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Custom Styles]((https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/custom_styles.png))
+![Custom Styles](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/custom_styles.png)
 
 ---
 
-## 🔘 5. Fixed Width and Max Height
+## • 5. Fixed Width and Max Height
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Sized Menu',
-  icon: Icons.aspect_ratio,
+  icon: Icon(Icons.aspect_ratio),
   config: MenuDropdownConfig(
     width: 200,
     maxHeight: 150,
@@ -147,16 +147,16 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Fixed Size Menu](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/fixed_size.png)
+![Fixed Size Menu](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/fixed_size.png)
 
 ---
 
-## 🔘 6. Divider and Custom Widgets
+## • 6. Divider and Custom Widgets
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Custom Items',
-  icon: Icons.widgets,
+  icon: Icon(Icons.widgets),
   items: [
     MenuItem(icon: Icons.settings, label: 'Settings'),
     MenuItem(isDivider: true),
@@ -178,15 +178,15 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Dividers and Custom](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/dividers_and_custom.png)
+![Dividers and Custom](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/dividers_and_custom.png)
 
 ---
 
-## 🔘 7. Custom Icon Color & Size for the Root Button
+## • 7. Custom Icon Color & Size for the Root Button
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.more_vert,
+  icon: Icon(Icons.more_vert),
   tooltip: "Menu",
   iconColor: Colors.red,
   iconSize: 30,
@@ -199,15 +199,15 @@ MenuDropdownButton(
 
 📸 Screenshot:
 
-![Custom Icon and Size](https://github.com/kutlwano-drew/flex_menu_button/blob/main/assets/screenshots/color_size.png)
+![Custom Icon and Size](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/color_size.png)
 
 ---
 
-## 🔘 8. Custom Header & Footer Styles
+## • 8. Custom Header & Footer Styles
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.menu,
+  icon: Icon(Icons.menu),
   tooltip: "Menu",
   header: Text('Menu Header'),
   footer: Text('Footer Note'),
@@ -236,11 +236,11 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 9. Custom Tooltip Colors
+## • 9. Custom Tooltip Colors
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.info,
+  icon: Icon(Icons.info),
   tooltip: "Info Tooltip",
   tooltipTextColor: Colors.black,
   tooltipBackgroundColor: Colors.yellow,
@@ -256,11 +256,11 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 10. Label and Icon Colors for Items
+## • 10. Label and Icon Colors for Items
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.more_horiz,
+  icon: Icon(Icons.more_horiz),
   tooltip: "Options",
   items: [
     MenuItem(icon: Icons.edit, label: 'Edit'),
@@ -281,7 +281,7 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 11. Root Text Instead of Icon
+## • 11. Root Text Instead of Icon
 
 ```dart
 MenuDropdownButton(
@@ -305,12 +305,12 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 12. Root Icon + Text Combination
+## • 12. Root Icon + Text Combination
 
 ```dart
 MenuDropdownButton(
   tooltip: 'Open Panel',
-  icon: Icons.menu,
+  icon: Icon(Icons.menu),
   rootText: 'Dashboard',
   rootTextStyle: TextStyle(
     fontSize: 15,
@@ -329,7 +329,30 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 13. Invisible Trigger (Secret Function Example)
+## • 13. Custom Icon widget
+
+```dart
+MenuDropdownButton(
+              buttonColor: Colors.greenAccent,
+              tooltip: 'Options',
+              icon: Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ),
+              items: [
+                MenuItem(icon: Icons.edit, label: 'Edit', onTap: () {}),
+                MenuItem(icon: Icons.delete, label: 'Delete', onTap: () {}),
+              ],
+            )
+```
+
+📸 Screenshot:
+
+![Custom Icon Widget](https://raw.githubusercontent.com/kutlwano-drew/flex_menu_button/main/assets/screenshots/button_color.png)
+
+---
+
+## • 13. Invisible Trigger (Secret Function Example)
 
 ```dart
 MenuDropdownButton(
@@ -348,7 +371,7 @@ MenuDropdownButton(
 
 ---
 
-## 🔘 14. Dropdown Size Customization & Auto-Resizing
+## • 14. Dropdown Size Customization & Auto-Resizing
 
 The `flex_menu_button` widget supports both **automatic content-based sizing** and **manual width control**.
 
@@ -366,7 +389,7 @@ The `flex_menu_button` widget supports both **automatic content-based sizing** a
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.more_vert,
+  icon: Icon(Icons.more_vert),
   tooltip: 'Options',
   config: MenuDropdownConfig(),
   items: [
@@ -385,7 +408,7 @@ MenuDropdownButton(
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.more_vert,
+  icon: Icon(Icons.more_vert),
   tooltip: 'Options',
   config: MenuDropdownConfig(
     width: 180,
@@ -406,7 +429,7 @@ MenuDropdownButton(
 
 ```dart
 MenuDropdownButton(
-  icon: Icons.more_vert,
+  icon: Icon(Icons.more_vert),
   tooltip: 'Options',
   config: MenuDropdownConfig(),
   items: [
@@ -436,8 +459,8 @@ If you don't specify a width in `MenuDropdownConfig`, the dropdown will scale ba
 
 ---
 
-### ☕ Buy Me a Coffee
+### ☕ Buy Me a Ko-fi
 
-- [☕ Support Here](https://buymeacoffee.com/kutlwano_drew)
+- [☕ Support Here](https://ko-fi.com/kutlwanodrew)
   
 ---

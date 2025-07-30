@@ -3,8 +3,8 @@ import 'menu_config.dart';
 import 'menu_item.dart';
 
 class MenuDropdownButton extends StatefulWidget {
-  /// Optional icon for the root button
-  final IconData? icon;
+  /// Optional custom icon widget for the root button (e.g. Icon, HeroIcon, SvgPicture)
+  final Widget? icon;
 
   /// Optional text for the root button
   final String? label;
@@ -27,17 +27,14 @@ class MenuDropdownButton extends StatefulWidget {
   /// Optional footer widget
   final Widget? footer;
 
-  /// Optional root icon color override
-  final Color? iconColor;
-
-  /// Optional root icon size override
-  final double? iconSize;
-
   /// Optional tooltip text color
   final Color? tooltipTextColor;
 
   /// Optional tooltip background color
   final Color? tooltipBackgroundColor;
+
+  /// Optional background color of the root button
+  final Color? buttonColor;
 
   const MenuDropdownButton({
     super.key,
@@ -49,10 +46,9 @@ class MenuDropdownButton extends StatefulWidget {
     this.config = const MenuDropdownConfig(),
     this.header,
     this.footer,
-    this.iconColor,
-    this.iconSize,
     this.tooltipTextColor,
     this.tooltipBackgroundColor,
+    this.buttonColor,
   });
 
   @override
@@ -247,12 +243,7 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
       triggerChild = Row(
         mainAxisSize: MainAxisSize.min,
         children: [
-          if (widget.icon != null)
-            Icon(
-              widget.icon,
-              color: widget.iconColor ?? Theme.of(context).iconTheme.color,
-              size: widget.iconSize ?? widget.config.iconSize,
-            ),
+          if (widget.icon != null) widget.icon!,
           if (widget.label != null && widget.label!.isNotEmpty) ...[
             if (widget.icon != null) const SizedBox(width: 6),
             Text(
@@ -283,11 +274,14 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
               widget.config.tooltipTextColor ??
               Colors.white,
         ),
-        child: InkWell(
-          onTap: _toggleOverlay,
-          borderRadius: BorderRadius.circular(4),
-          child: Padding(
-            padding: const EdgeInsets.all(8.0),
+        child: Container(
+          decoration: BoxDecoration(
+            color: widget.buttonColor ?? Colors.white,
+            borderRadius: BorderRadius.circular(4),
+          ),
+          padding: const EdgeInsets.all(8.0),
+          child: GestureDetector(
+            onTap: _toggleOverlay,
             child: triggerChild,
           ),
         ),
