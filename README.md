@@ -352,7 +352,7 @@ MenuDropdownButton(
 
 ---
 
-## • 13. Invisible Trigger (Secret Function Example)
+## • 14. Invisible Trigger (Secret Function Example)
 
 ```dart
 MenuDropdownButton(
@@ -371,7 +371,7 @@ MenuDropdownButton(
 
 ---
 
-## • 14. Dropdown Size Customization & Auto-Resizing
+## • 15. Dropdown Size Customization & Auto-Resizing
 
 The `flex_menu_button` widget supports both **automatic content-based sizing** and **manual width control**.
 
