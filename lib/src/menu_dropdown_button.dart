@@ -59,12 +59,37 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
     _isOpen = false;
   }
 
+  Offset _getOffset(Size buttonSize, Size dropdownSize) {
+    final offset = widget.config.dropdownOffset;
+    switch (widget.config.alignment) {
+      case MenuAlignment.top:
+        return Offset(0, -dropdownSize.height - offset);
+      case MenuAlignment.centerLeft:
+        return Offset(-dropdownSize.width - offset,
+            (buttonSize.height - dropdownSize.height) / 2);
+      case MenuAlignment.centerRight:
+        return Offset(buttonSize.width + offset,
+            (buttonSize.height - dropdownSize.height) / 2);
+      case MenuAlignment.center:
+        return Offset(
+          (buttonSize.width - dropdownSize.width) / 2,
+          buttonSize.height + offset,
+        );
+      case MenuAlignment.right:
+        return Offset(
+            buttonSize.width - dropdownSize.width, buttonSize.height + offset);
+      case MenuAlignment.left:
+      default:
+        return Offset(0, buttonSize.height + offset);
+    }
+  }
+
   OverlayEntry _createOverlay() {
     RenderBox renderBox = context.findRenderObject() as RenderBox;
     Size buttonSize = renderBox.size;
     Offset buttonPosition = renderBox.localToGlobal(Offset.zero);
 
-    final dropdown = Material(
+    Widget dropdown = Material(
       elevation: widget.config.elevation,
       borderRadius: BorderRadius.circular(widget.config.borderRadius),
       color: widget.config.backgroundColor,
@@ -72,6 +97,7 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
         constraints: BoxConstraints(
           maxHeight: widget.config.maxHeight ?? double.infinity,
         ),
+        width: widget.config.width,
         child: IntrinsicWidth(
           stepWidth: widget.config.width ?? 0,
           child: SingleChildScrollView(
@@ -158,25 +184,7 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
       ),
     );
 
-    double dx;
-    switch (widget.config.alignment) {
-      case MenuAlignment.center:
-        dx = buttonPosition.dx +
-            buttonSize.width / 2 -
-            (widget.config.width ?? 0) / 2;
-        break;
-      case MenuAlignment.right:
-        dx = buttonPosition.dx + buttonSize.width - (widget.config.width ?? 0);
-        break;
-      case MenuAlignment.left:
-      default:
-        dx = buttonPosition.dx;
-        break;
-    }
-
-    double dy = widget.config.showAbove
-        ? buttonPosition.dy - (widget.config.maxHeight ?? 200) - 8
-        : buttonPosition.dy + buttonSize.height + 8;
+    final dropdownKey = GlobalKey();
 
     return OverlayEntry(
       builder: (context) => GestureDetector(
@@ -186,17 +194,17 @@ class _MenuDropdownButtonState extends State<MenuDropdownButton> {
           children: [
             Positioned.fill(child: Container(color: Colors.transparent)),
             Positioned(
-              left: dx,
-              top: dy,
+              left: buttonPosition.dx,
+              top: buttonPosition.dy,
               child: CompositedTransformFollower(
                 link: _layerLink,
                 showWhenUnlinked: false,
-                offset: Offset(
-                  0,
-                  widget.config.showAbove
-                      ? -buttonSize.height
-                      : buttonSize.height,
-                ),
+                offset: _getOffset(
+                    buttonSize,
+                    Size(
+                      widget.config.width ?? 150,
+                      widget.config.maxHeight ?? 200,
+                    )),
                 child: dropdown,
               ),
             ),
