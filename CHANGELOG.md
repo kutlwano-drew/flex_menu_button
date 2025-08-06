@@ -1,5 +1,10 @@
 ## 1.0.2
 
+- Added more offest control for distance of dropdown
+- Added more alignment controls to change the alignment of the dropdown
+  
+## 1.0.2
+
 - Modify Items to allow custom icon widgets
 - Refined documentation and examples
 

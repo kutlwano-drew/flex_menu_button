@@ -2,7 +2,7 @@ name: flex_menu_button
 description: >
   A flexible and customizable dropdown menu button for Flutter. Supports headers, footers, icon or text triggers, custom styles, tooltips, and even secret invisible actions.
 
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/kutlwano-drew/flex_menu_button
 
 environment:
