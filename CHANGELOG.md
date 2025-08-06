@@ -1,4 +1,4 @@
-## 1.0.2
+## 1.0.3
 
 - Added more offest control for distance of dropdown
 - Added more alignment controls to change the alignment of the dropdown
